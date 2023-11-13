@@ -1,0 +1,8 @@
+node{
+Stage('SCM Checkout'){
+git 'https://github.com/ParPils/MyJenkinsLessons'
+}
+Stage ('Complile Package'){
+sh 'maven package'
+}
+}
